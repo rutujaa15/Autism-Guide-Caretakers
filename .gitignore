@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+autism_env/
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
