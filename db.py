@@ -59,7 +59,7 @@ def create_tables():
     conn.commit()
     cur.close()
     conn.close()
-    print("✅ Users table created successfully")
+    print("✅ Users and Memories tables created successfully")
 
 # ---------------------------
 # RUN DIRECTLY
