@@ -120,7 +120,7 @@ Answer:
 # -------------------------
 rag_pipeline = (
     {
-        "context": retriever | (lambda x: x["question"]),
+        "context": (lambda x: x["question"]) | retriever,
         "question": lambda x: x["question"],
         "memory": lambda x: x["memory"],
     }
