@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* -----------------------------
+   BASE THEME VARIABLES (LIGHT)
+------------------------------ */
+:root {
+  --background: #f9fafb;
+  --foreground: #111827;
+
+  --panel: #ffffff;
+  --panel-border: #e5e7eb;
+
+  --input: #ffffff;
+  --input-border: #d1d5db;
+
+  --accent: #2563eb;
+  --muted: #6b7280;
+}
+
+/* -----------------------------
+   DARK MODE VARIABLES
+   (Activated via `.dark` class)
+------------------------------ */
+.dark {
+  --background: #131314;
+  --foreground: #e3e3e3;
+
+  --panel: #1e1f20;
+  --panel-border: #2a2a2a;
+
+  --input: #1e1f20;
+  --input-border: #333537;
+
+  --accent: #3b82f6;
+  --muted: #8e918f;
+}
+
+/* -----------------------------
+   TAILWIND THEME MAPPING
+------------------------------ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-panel: var(--panel);
+  --color-panel-border: var(--panel-border);
+
+  --color-input: var(--input);
+  --color-input-border: var(--input-border);
+
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* -----------------------------
+   GLOBAL BASE STYLES
+------------------------------ */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+/* Smooth transitions everywhere */
+* {
+  transition: background-color 0.25s ease,
+              color 0.25s ease,
+              border-color 0.25s ease;
+}
