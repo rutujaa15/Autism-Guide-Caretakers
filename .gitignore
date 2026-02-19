@@ -4,6 +4,7 @@ __pycache__/
 .env
 venv/
 autism_env/
+medication_track_ag.py
 
 # Node
 node_modules/
@@ -11,3 +12,4 @@ node_modules/
 # Build
 dist/
 build/
+
